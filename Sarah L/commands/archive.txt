@@ -1,0 +1,30 @@
+const { SlashCommandBuilder, PermissionFlagsBits } = require('discord.js');
+//developed by Sarah Luetz
+module.exports = {
+	data: new SlashCommandBuilder()
+		.setName('archive')
+		.setDescription('Archives a class cluster')
+		/*
+		//take in a particular class code as options
+		.addStringOption(option =>
+			option.setName('class-prefix')
+			.setDescription('Class prefix')
+			.setRequired(true)
+		);
+		.addIntegerOption( option =>
+			option.setName('class-num')
+			.setDescription('Class number')
+			.setRequired(true)
+		);
+		
+		//check if user has permission to manage roles (maybe change to check if user is prof specifcally?)
+		.setDefaultMemberPermissions(PermissionFlagsBits.ManageRoles),
+		
+		
+		for loop through all students who have the '${class}-student' role{
+			add '${class}-veteran' role
+			remove '${class}-student' role
+		}
+		remove permission from '${class}-student' to access class cluster
+		*/
+}
